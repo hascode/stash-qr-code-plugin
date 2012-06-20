@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">webresources/image/plugin-icon.png</param>
+    <param name="plugin-logo">webresources/image/plugin-logo.png</param>
+    <param name="plugin-banner">webresources/image/plugin-banner.png</param>
+    <param name="vendor-icon">webresources/image/plugin-icon.png</param>
+    <param name="vendor-logo">webresources/image/plugin-logo.png</param>
+  </plugin-info>
+  <component key="code-creator-impl" class="com.hascode.plugin.components.CodeCreatorImpl" name="Code Creator Impl" i18n-name-key="code-creator-impl.name">
+    <description key="code-creator-impl.description">The Code Creator Impl Plugin</description>
+    <interface>com.hascode.plugin.components.CodeCreator</interface>
+  </component>
+  <resource type="i18n" name="i18n" location="com.hascode.plugin.stash-qrcode-plugin"/>
+  <servlet name="QR Code Servlet" i18n-name-key="qr-code-servlet.name" key="qr-code-servlet" class="com.hascode.plugin.servlet.QRCodeServlet">
+    <description key="qr-code-servlet.description">The QR Code Servlet Plugin</description>
+    <url-pattern>/qrcode</url-pattern>
+  </servlet>
+  <web-item name="Repository QR Code Item" i18n-name-key="repository-qr-code-item.name" key="repository-qr-code-item" section="stash.repository.nav" weight="1000">
+    <description key="repository-qr-code-item.description">The Repository QR Code Item Plugin</description>
+    <label key="repository-qr-code-item.label"/>
+    <link linkId="repository-qr-code-item-link">/plugins/servlet/qrcode?r=$repository.id</link>
+  </web-item>
+   <!-- <web-item name="Project QR Code Item" i18n-name-key="project-qr-code-item.name" key="project-qr-code-item" section="atl.project.nav" weight="1000">
+    <description key="project-qr-code-item.description">The Project QR Code Item Plugin</description>
+    <label key="repository-qr-code-item.label"/>
+    <link linkId="repository-qr-code-item-link">/plugins/servlet/qrcode?p=$project.id</link>
+  </web-item> -->
+  <web-resource name="QR Code Web Resources" i18n-name-key="qr-code-web-resources.name" key="qr-code-web-resources">
+    <description key="qr-code-web-resources.description">The QR Code Web Resources Plugin</description>
+    <resource name="qrCodeEmbed.js" type="download" location="res/js/qrCodeEmbed-min.js"/>
+    <resource name="qrCodeEmbed.css" type="download" location="res/css/qrCodeEmbed-min.css"/>
+    <context>atl.general</context>
+  </web-resource>
+</atlassian-plugin>
