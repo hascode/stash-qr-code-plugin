@@ -25,11 +25,11 @@
     <label key="repository-qr-code-item.label"/>
     <link linkId="repository-qr-code-item-link">/plugins/servlet/qrcode?r=$repository.id</link>
   </web-item>
-   <!-- <web-item name="Project QR Code Item" i18n-name-key="project-qr-code-item.name" key="project-qr-code-item" section="atl.project.nav" weight="1000">
+  <web-item name="Project QR Code Item" i18n-name-key="project-qr-code-item.name" key="project-qr-code-item" section="atl.project.nav" weight="1000">
     <description key="project-qr-code-item.description">The Project QR Code Item Plugin</description>
     <label key="repository-qr-code-item.label"/>
     <link linkId="repository-qr-code-item-link">/plugins/servlet/qrcode?p=$project.id</link>
-  </web-item> -->
+  </web-item>
   <web-resource name="QR Code Web Resources" i18n-name-key="qr-code-web-resources.name" key="qr-code-web-resources">
     <description key="qr-code-web-resources.description">The QR Code Web Resources Plugin</description>
     <resource name="qrCodeEmbed.js" type="download" location="res/js/qrCodeEmbed-min.js"/>
