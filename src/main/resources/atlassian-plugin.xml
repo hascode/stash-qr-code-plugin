@@ -6,11 +6,8 @@
 		<description>${project.description}</description>
 		<version>${project.version}</version>
 		<vendor name="${project.organization.name}" url="${project.organization.url}" />
-		<param name="plugin-icon">webresources/image/plugin-icon.png</param>
-		<param name="plugin-logo">webresources/image/plugin-logo.png</param>
-		<param name="plugin-banner">webresources/image/plugin-banner.png</param>
-		<param name="vendor-icon">webresources/image/plugin-icon.png</param>
-		<param name="vendor-logo">webresources/image/plugin-logo.png</param>
+		<param name="plugin-icon">branding/qrcode-icon.png</param>
+		<param name="plugin-logo">branding/qrcode-logo.png</param>
 	</plugin-info>
 	<component key="code-creator-impl"
 		class="com.hascode.plugin.components.CodeCreatorImpl" name="Code Creator Impl"
