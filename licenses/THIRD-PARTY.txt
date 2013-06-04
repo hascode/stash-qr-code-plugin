@@ -1,0 +1,8 @@
+List of third-party dependencies.
+
+ (Common Public License Version 1.0) JUnit (junit:junit:4.8.1 - http://junit.org)
+ (The Apache Software License, Version 2.0) Commons Lang (commons-lang:commons-lang:2.6 - http://commons.apache.org/lang/)
+ (The Apache Software License, Version 2.0) Apache HttpComponents Client (org.apache.httpcomponents:httpclient:4.1.1 - http://hc.apache.org/)
+ (MIT/X11) SLF4J API (org.slf4j:slf4j-api:1.6.1 - http://www.slf4j.org)
+ (MIT/X11) SLF4J Log4j12 (org.slf4j:slf4j-log4j12:1.6.2 - http://www.slf4j.org)
+ (The Apache Software License, Version 2.0) ZXing Core + ZXing JavaSe (com.google.zxing:core:1.6, com.google.zxing:javase:1.6 - https://github.com/zxing/zxing)

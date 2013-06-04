@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hascode.plugin</groupId>
 	<artifactId>stash-qrcode-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>Stash QR Code Plugin</name>
 	<description>Adds QR codes to your Atlassian Stash instance.</description>
 	<packaging>atlassian-plugin</packaging>
@@ -19,6 +19,12 @@
 			<url>http://www.hascode.com/</url>
 		</developer>
 	</developers>
+	<licenses>
+		<license>
+			<name>Apache 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
 	<dependencies>
 		<dependency>
 			<groupId>com.atlassian.stash</groupId>
@@ -117,6 +123,7 @@
 	<properties>
 		<stash.version>1.1.0</stash.version>
 		<stash.data.version>1.0.0</stash.data.version>
-		<amps.version>3.11</amps.version>
+		<amps.version>4.1.7</amps.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 </project>
